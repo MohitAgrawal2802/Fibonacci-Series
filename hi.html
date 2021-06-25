@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> Fibonacci Series</title>
+</head>
+<body>
+<script>
+
+var n = parseInt(prompt('Enter the number of terms: '));
+var n1 = 0, n2 = 1, nextTerm,i;
+
+document.write('Fibonacci Series:');
+
+for (i = 1; i <= n; i++) 
+{
+    document.write("<br>"+n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+}
+</script>
+</body>
+</html>
